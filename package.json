@@ -1,0 +1,38 @@
+{
+  "name": "hexagonal_archi_in_frontend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "lint:check": "vue-cli-service lint --no-fix"
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "~4.5.11",
+    "@vue/cli-service": "~4.5.11",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "babel-eslint": "^10.1.0"
+  },
+  "_id": "hexagonal_archi_in_frontend@0.0.1",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "readme": "README.md"
+}
